@@ -42,9 +42,9 @@ int main(void)
     // seed for rand()
     srand(time (0));     
     
-    printf("Ââåäèòå îáùåå êîëè÷åñòâî ñèìâîëîâ (îò 0 äî 100): ");
+    printf("Введите общее количество символов (от 0 до 100): ");
     
-    // input a total amountь of symbols
+    // input a total amount of symbols
     symbols = input_symbols (symbols);
     
     // checks correctness of input
@@ -53,7 +53,7 @@ int main(void)
         return 0;
     }
     
-    printf("Ââåäèòå êîëè÷åñòâî öèôð (îò 0 äî %i): ", symbols);
+    printf("Введите количество цифр (от 0 до %i): ", symbols);
    
     // input an amount of numerals 
     numerals = input_numerals (numerals, symbols);
@@ -66,7 +66,7 @@ int main(void)
     
     if (numerals == symbols)
     {
-        printf("Âàøè ïàðîëè: \n\n");      
+        printf("Ваши пароли: \n\n");      
         int i;
         for (i = 0; i < 10; i++)
         {
@@ -80,7 +80,7 @@ int main(void)
      
     remain = symbols - numerals;
 
-    printf("Ââåäèòå êîëè÷åñòâî ñïåöèàëüíûõ ñèìâîëîâ (îò 0 äî %i): ", remain);
+    printf("Введите количество специальных символов (от 0 до %i): ", remain);
 
     // input an amount of special symbols
     spec_sym = input_spec (spec_sym, remain);
@@ -93,7 +93,7 @@ int main(void)
     
     if (spec_sym == remain)
     {
-        printf("Âàøè ïàðîëè: \n\n");      
+        printf("Ваши пароли: \n\n");      
         int i;
         for (i = 0; i < 10; i++)
         {
@@ -110,7 +110,7 @@ int main(void)
     
     remain = remain - spec_sym;
     
-    printf("Ââåäèòå êîëè÷åñòâî çàãëàâíûõ áóêâ (îò 0 äî %i): ", remain);
+    printf("Введите количество заглавных букв (от 0 до %i): ", remain);
 
     // input an amount of uppercase letters
     upp_let = input_upp (upp_let, remain);
@@ -126,7 +126,7 @@ int main(void)
     // set an amount of uppercase letters
     low_let = abs(remain);
 
-    printf("Âàøè ïàðîëè: \n\n"); 
+    printf("Ваши пароли: \n\n"); 
 
     // print out passwords
     int i;

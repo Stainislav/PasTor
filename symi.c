@@ -42,7 +42,7 @@ int main(void)
     // seed for rand()
     srand(time (0));     
     
-    printf("Введите общее количество символов (от 0 до 100): ");
+    printf("Введите общее количество символов (от 1 до 100): ");
     
     // input a total amount of symbols
     symbols = input_symbols (symbols);

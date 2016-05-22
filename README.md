@@ -1,1 +1,1 @@
-# PasTor
+This is the PasTor, a console programm that generates passwords. It takes total amount of symbols, amount of numerals, amount of special symbols and amount of uppercase letters and generates 10 passwords based on that user input.

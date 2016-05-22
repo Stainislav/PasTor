@@ -42,9 +42,9 @@ int main(void)
     // seed for rand()
     srand(time (0));     
     
-    printf("Введите общее количество символов (от 0 до 100): ");
+    printf("Г‚ГўГҐГ¤ГЁГІГҐ Г®ГЎГ№ГҐГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±ГЁГ¬ГўГ®Г«Г®Гў (Г®ГІ 0 Г¤Г® 100): ");
     
-    // input a total amount of symbols
+    // input a total amountСЊ of symbols
     symbols = input_symbols (symbols);
     
     // checks correctness of input
@@ -53,7 +53,7 @@ int main(void)
         return 0;
     }
     
-    printf("Введите количество цифр (от 0 до %i): ", symbols);
+    printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г¶ГЁГґГ° (Г®ГІ 0 Г¤Г® %i): ", symbols);
    
     // input an amount of numerals 
     numerals = input_numerals (numerals, symbols);
@@ -66,7 +66,7 @@ int main(void)
     
     if (numerals == symbols)
     {
-        printf("Ваши пароли: \n\n");      
+        printf("Г‚Г ГёГЁ ГЇГ Г°Г®Г«ГЁ: \n\n");      
         int i;
         for (i = 0; i < 10; i++)
         {
@@ -80,7 +80,7 @@ int main(void)
      
     remain = symbols - numerals;
 
-    printf("Введите количество специальных символов (от 0 до %i): ", remain);
+    printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±ГЇГҐГ¶ГЁГ Г«ГјГ­Г»Гµ Г±ГЁГ¬ГўГ®Г«Г®Гў (Г®ГІ 0 Г¤Г® %i): ", remain);
 
     // input an amount of special symbols
     spec_sym = input_spec (spec_sym, remain);
@@ -93,7 +93,7 @@ int main(void)
     
     if (spec_sym == remain)
     {
-        printf("Ваши пароли: \n\n");      
+        printf("Г‚Г ГёГЁ ГЇГ Г°Г®Г«ГЁ: \n\n");      
         int i;
         for (i = 0; i < 10; i++)
         {
@@ -110,7 +110,7 @@ int main(void)
     
     remain = remain - spec_sym;
     
-    printf("Введите количество заглавных букв (от 0 до %i): ", remain);
+    printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г§Г ГЈГ«Г ГўГ­Г»Гµ ГЎГіГЄГў (Г®ГІ 0 Г¤Г® %i): ", remain);
 
     // input an amount of uppercase letters
     upp_let = input_upp (upp_let, remain);
@@ -126,7 +126,7 @@ int main(void)
     // set an amount of uppercase letters
     low_let = abs(remain);
 
-    printf("Ваши пароли: \n\n"); 
+    printf("Г‚Г ГёГЁ ГЇГ Г°Г®Г«ГЁ: \n\n"); 
 
     // print out passwords
     int i;

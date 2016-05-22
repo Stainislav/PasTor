@@ -1,6 +1,6 @@
 [Project]
 FileName=PasTor.dev
-Name=Проект1
+Name=РџСЂРѕРµРєС‚1
 UnitCount=4
 Type=1
 Ver=1
@@ -60,7 +60,7 @@ AutoIncBuildNr=0
 [Unit2]
 FileName=..\PasTor II\rseqo.c
 CompileCpp=0
-Folder=Проект1
+Folder=РџСЂРѕРµРєС‚1
 Compile=1
 Link=1
 Priority=1000
